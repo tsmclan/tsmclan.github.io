@@ -13,14 +13,37 @@
       <nav class="navigation">
         <a href="/">CRsNotes</a>
       </nav>
-      <div class="about"><h1 id="how-to-manually-git-push">How to manually git push</h1>
+      <div class="about"><h4 id="how-to-manually-git-clone-repo-via-https">How to manually git clone repo via https</h4>
 <p>If you have generated your site, but for some reasons, fail to publish it, and/or you hope to use git manually to push it to Github, you can follow following steps:</p>
-<p><code>Step 1:</code> cd &lt;output-dir&gt;</p>
-<p>you can get &lt;output-dir&gt; in "Generated Successfully" modal dialogue</p>
+<p><code>Step 1</code>: cd /Users/rchen/.config/joplin-desktop/plugin-data/ylc395.pagesPublisher/output</p>
+<p>you can get the output-dir in "Generated Successfully" modal dialogue and then cd &lt;output-dir&gt;</p>
 <p><code>Step 2</code>: git init --separate-git-dir ../tsmclan</p>
-<p>Since now, you can use git as usual to do anything you want, including pushing to remote.</p>
-<p><code>Step 3:</code> git push <a title="https://github.com/tsmclan/crnotes.git" href="https://github.com/tsmclan/crnotes.git">https://github.com/tsmclan/crnotes.git</a>
-git clone <a title="https://github.com/tsmclan/tsmclan.github.io" href="https://github.com/tsmclan/tsmclan.github.io">https://github.com/tsmclan/tsmclan.github.io</a></p>
+<p>git ends with a message "Initialized empty Git repository in /Users/rchen/.config/joplin-desktop/plugin-data/ylc395.pagesPublisher/tsmclan/"</p>
+<pre><code>% cd ../tsmclan 
+% ls
+HEAD        config      description hooks       info        objects     refs
+</code></pre>
+<p><code>Step 3</code>: git clone <a title="https://github.com/tsmclan/tsmclan.github.io" href="https://github.com/tsmclan/tsmclan.github.io">https://github.com/tsmclan/tsmclan.github.io</a></p>
+<pre><code>Cloning into 'tsmclan.github.io'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+</code></pre>
+<p><code>Step 4</code>: cd tsmclan.github.io &amp;&amp; git add --all</p>
+<p><code>Step 5</code>: git commit -m "Initial commit"</p>
+<pre><code>[main 8e8863e] Initial commit
+ 7 files changed, 1662 insertions(+)
+ create mode 100644 _assets/main.css
+ create mode 100644 _markdown_plugin_assets/highlight.js/atom-one-light.css
+ create mode 100644 about.html
+ create mode 100644 archives.html
+ create mode 100644 article/ds24pta.html
+ create mode 100644 favicon.ico
+ create mode 100644 index.html
+</code></pre>
+<p><code>Step 7</code>: git push -u orgini main</p>
 </div>
     </div>
   </body>
