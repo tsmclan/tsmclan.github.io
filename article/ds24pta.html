@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <title>ds24PTA - CRsNotes</title>
+  <link rel="stylesheet" href="/_markdown_plugin_assets/highlight.js/atom-one-light.css" /></head>
+  <body>
+    <div class="main">
+      <nav class="navigation">
+        <a href="/">CRsNotes</a>
+      </nav>
+      <article>
+        <header>
+          <h1 class="article-title">ds24PTA</h1>
+          <div class="article-info">
+            <div>
+              <span
+                >Created At：<time datetime="1632018925021"
+                  >2021-09-19 10:35</time
+                ></span
+              >
+              <span
+                >Updated At：<time datetime="1674096184440"
+                  >2023-01-19 10:43</time
+                ></span
+              >
+            </div>
+            
+          </div>
+        </header>
+        <div class="article-content markdown-body"><p>本文件罗列了实验课课上作业（PTA系统称之为题目集，即<strong>试卷</strong>）的所有链接。</p>
+<h2 id="试卷列表">试卷列表</h2>
+<ul>
+<li><a title="https://pintia.cn/problem-sets/1432566282965581824/manage" href="https://pintia.cn/problem-sets/1432566282965581824/manage">exp1-带头的单链表</a></li>
+</ul>
+<blockquote>
+<p>完成有关带头单链表的五个任务。
+<a title="https://pintia.cn/problems/1433442863264088064/" href="https://pintia.cn/problems/1433442863264088064/">题面-带头的单链表</a>的试卷分享码：<span class="highlight jop-noMdConv"><span class="err jop-noMdConv">188B5A11266F45C6</span></span></p>
+</blockquote>
+<ul>
+<li><a title="https://pintia.cn/problem-sets/1439578463190044672/manage" href="https://pintia.cn/problem-sets/1439578463190044672/manage">exp2-多项式运算</a></li>
+</ul>
+<blockquote>
+<p>用带头单链表表示的一元多项式，完成多项式的运算。
+<a title="https://pintia.cn/problems/1433696257291362304/" href="https://pintia.cn/problems/1433696257291362304/">题面-多项式运算</a>的试卷分享码：<span class="highlight jop-noMdConv"><span class="err jop-noMdConv">BC23D17F430ACFD5</span></span></p>
+</blockquote>
+<ul>
+<li>
+<p><a title="https://pintia.cn/problem-sets/1450580596161921024/" href="https://pintia.cn/problem-sets/1450580596161921024/">exp3-表达式求值</a></p>
+<p><code>D:\wk\tching\ds4824\实验课24\pta.cn\A5-最大公约数_最小公倍数\</code></p>
+<div><pre class="hljs"><code><span class="hljs-comment">//GCD - Greatest Commnond Divider最大公约数 - Algorithm 1: </span>
+<span class="hljs-comment">//try all integers from n down until finding one that divides m and n evenly.</span>
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">gcd1</span><span class="hljs-params">(<span class="hljs-type">int</span> m, <span class="hljs-type">int</span> n, <span class="hljs-type">int</span> g)</span></span>;
+<span class="hljs-comment">//GCD Algorithm 2: Euclid's Algorithm</span>
+<span class="hljs-comment">//If m &gt; n, the gcd of m and n is the same as the gcd of n and m % n.</span>
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">gcd2</span><span class="hljs-params">(<span class="hljs-type">int</span> m, <span class="hljs-type">int</span> n)</span></span>;
+<span class="hljs-comment">//GCD Algorithm 3: Dijkstra's Algorithm</span>
+<span class="hljs-comment">//The idea: If m&gt;n, GCD(m,n) is the same as GCD(m-n,n).</span>
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">gcd3</span><span class="hljs-params">(<span class="hljs-type">int</span> m, <span class="hljs-type">int</span> n)</span></span>;
+<span class="hljs-comment">//递归地计算一组数的GCD，这里n代表num[]包含几个数，max是其中的最大值。</span>
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">GCDs</span><span class="hljs-params">(<span class="hljs-type">int</span> num[], <span class="hljs-type">int</span> n, <span class="hljs-type">int</span> max)</span></span>;
+<span class="hljs-comment">//计算一组数的最小公倍数(LCM)，这里n代表num[]包含几个数，max是其中的最大值, lcm初值为0。</span>
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">LCMs</span><span class="hljs-params">(<span class="hljs-type">int</span> num[], <span class="hljs-type">int</span> n, <span class="hljs-type">int</span> max, <span class="hljs-type">int</span> &amp;lcm)</span></span>;</code></pre></div>
+</li>
+</ul>
+<blockquote>
+<p>复习有关（链）栈和表达式求值算法3.22的知识，体会如何应用栈实现算术表达式的计算。</p>
+</blockquote>
+<blockquote>
+<p><a title="https://pintia.cn/problems/1433762048338599936/" href="https://pintia.cn/problems/1433762048338599936/">题面-表达式求值</a>的试卷分享码：<span class="highlight jop-noMdConv"><span class="err jop-noMdConv">4780AFFA2BB4F7DF</span></span></p>
+</blockquote>
+<ul>
+<li>
+<p>约瑟夫环</p>
+<p><a title="https://pintia.cn/problems/909784009753591808" href="https://pintia.cn/problems/909784009753591808">约瑟夫环</a></p>
+<p><a title="https://pintia.cn/problems/1440323502011240448" href="https://pintia.cn/problems/1440323502011240448">运用循环单链表实现约瑟夫问题</a></p>
+<p><a title="https://pintia.cn/problems/1258370938661048320/" href="https://pintia.cn/problems/1258370938661048320/">约瑟夫环之循环链表</a></p>
+<p><a title="https://acm.hdu.edu.cn/showproblem.php?pid=4841" href="https://acm.hdu.edu.cn/showproblem.php?pid=4841">hdu4841-圆桌问题</a></p>
+<p><a title="http://data.biancheng.net/view/131.html" href="http://data.biancheng.net/view/131.html">约瑟夫环问题详解（C语言链表实现）</a></p>
+<p><a title="https://leetcode.cn/circle/article/BOoxAL/" href="https://leetcode.cn/circle/article/BOoxAL/">约瑟夫环问题的三种解法讲解 - LeetCode</a></p>
+<p><a title="https://zhuanlan.zhihu.com/p/35487124" href="https://zhuanlan.zhihu.com/p/35487124">算法精解：约瑟夫（Josephus）问题 - 知乎</a></p>
+<p><code>D:\wk\tching\ds4824\实验课24\pta.cn\hdu4841joseph\圆桌问题题面.md</code></p>
+<div><pre class="hljs"><code><span class="hljs-comment">//T1. 循环链表模拟</span>
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">joseph_cycliclist</span><span class="hljs-params">(<span class="hljs-type">int</span> n, <span class="hljs-type">int</span> m)</span></span>;
+<span class="hljs-comment">//T2. 动态数组模拟</span>
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">joseph_vector</span><span class="hljs-params">(<span class="hljs-type">int</span> n, <span class="hljs-type">int</span> m)</span></span>;
+<span class="hljs-comment">//T3. 用动态数组递推打标记的办法解决</span>
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">joseph_vector_labeling</span><span class="hljs-params">(<span class="hljs-type">int</span> n, <span class="hljs-type">int</span> m)</span></span>;
+<span class="hljs-comment">//T4. 用静态数组递推打标记的办法解决</span>
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">joseph_array_labeling</span><span class="hljs-params">(<span class="hljs-type">int</span> n, <span class="hljs-type">int</span> m)</span></span>;
+<span class="hljs-comment">//统计时间</span>
+<span class="hljs-function"><span class="hljs-type">double</span> <span class="hljs-title">elapse_time</span><span class="hljs-params">(<span class="hljs-type">void</span> (*pf)(<span class="hljs-type">int</span>,<span class="hljs-type">int</span>), <span class="hljs-type">int</span> n, <span class="hljs-type">int</span> m)</span> </span>{<span class="hljs-comment">/*...*/</span>}</code></pre></div>
+</li>
+<li>
+<p><a title="https://pintia.cn/problem-sets/1459493421190332416/manage" href="https://pintia.cn/problem-sets/1459493421190332416/manage">exp5-矩阵运算</a></p>
+</li>
+</ul>
+<blockquote>
+<p>复习有关4.4数组的知识，体会如何应用三元组表示实现矩阵的运算。
+<a title="https://pintia.cn/problems/1458408976516501504/" href="https://pintia.cn/problems/1458408976516501504/">题面-稀疏矩阵的运算</a>的试卷分享码：<span class="highlight jop-noMdConv"><span class="err jop-noMdConv">AB25CC43AD406C77</span></span></p>
+</blockquote>
+<ul>
+<li><a title="https://pintia.cn/problem-sets/1448259135744684032/manage" href="https://pintia.cn/problem-sets/1448259135744684032/manage">exp7-二叉排序树</a></li>
+</ul>
+<blockquote>
+<p><a title="https://pintia.cn/problems/996770104119775232/" href="https://pintia.cn/problems/996770104119775232/">题面-二叉排序树基本运算(C++)</a>的试卷分享码：<span class="highlight jop-noMdConv"><span class="err jop-noMdConv">52718B2D6C438DF5</span></span></p>
+</blockquote>
+<blockquote>
+<p>答案代码： <span class="highlight jop-noMdConv"><span class="gi jop-noMdConv">D:\wk\tching\ds4824\实验课24\pta.cn\7-二叉排序树基本运算\answer.cpp</span></span></p>
+</blockquote>
+<ul>
+<li><a title="https://pintia.cn/problem-sets/1468908737260310528/manage/problems?problemType=CODE_COMPLETION" href="https://pintia.cn/problem-sets/1468908737260310528/manage/problems?problemType=CODE_COMPLETION">expA7-先中创建二叉树</a></li>
+</ul>
+<blockquote>
+<p><a title="https://pintia.cn/problems/1364814413893566464/" href="https://pintia.cn/problems/1364814413893566464/">题面-先序序列+中序序列建立二叉树（递归法）</a>的试卷分享码：<span class="highlight jop-noMdConv"><span class="err jop-noMdConv">27571306D2892A31</span></span></p>
+</blockquote>
+<blockquote>
+<p>答案代码： <span class="highlight jop-noMdConv"><span class="gi jop-noMdConv">D:\wk\tching\ds4824\实验课24\pta.cn\A3-先中创建二叉树\answer.cpp</span></span></p>
+</blockquote>
+<ul>
+<li>
+<p><a title="https://acm.hdu.edu.cn/showproblem.php?pid=1425" href="https://acm.hdu.edu.cn/showproblem.php?pid=1425">从大到小输出前m大的数 - hdu1425</a></p>
+<p><code>D:\wk\tching\ds4824\实验课24\pta.cn\0-hdu1425\</code></p>
+<p><code>D:\wk\tching\ds4824\实验课24\pta.cn\0-hdu1425\bubble-hdu1425.cpp</code></p>
+<p><code>D:\wk\tching\ds4824\实验课24\pta.cn\0-hdu1425\sort-hdu1425.cpp</code></p>
+<p><code>D:\wk\tching\ds4824\实验课24\pta.cn\0-hdu1425\hash-hdu1425.cpp</code></p>
+<p><code>D:\wk\tching\ds4824\实验课24\pta.cn\0-hdu1425\test-hdu1425.cpp</code></p>
+</li>
+</ul>
+<blockquote>
+<p>算法竞赛题重要考核的在限定时间和空间内解决问题。对于程序设计竞赛来说，由于竞赛时间极为紧张，并不是只有高效的算法才是合理的，只有尽快完成更多的题目才能获胜。</p>
+</blockquote>
+<ul>
+<li>
+<p><a title="https://pintia.cn/problems/1507/" href="https://pintia.cn/problems/1507/">双端队列</a></p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/4610/" href="https://pintia.cn/problems/4610/">快速排序</a></p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/1199592015572406272/" href="https://pintia.cn/problems/1199592015572406272/">基数排序</a></p>
+</li>
+</ul>
+<h2 id="附加题加试试卷">附加题/加试试卷</h2>
+<ul>
+<li><a title="https://pintia.cn/problems/1444263621434150912" href="https://pintia.cn/problems/1444263621434150912">奇前偶后的单链表</a></li>
+</ul>
+<blockquote>
+<p><a title="https://pintia.cn/problems/1444263621434150912/" href="https://pintia.cn/problems/1444263621434150912/">题面-奇偶单链表</a>的试卷分享码：<span class="highlight jop-noMdConv"><span class="err jop-noMdConv">DBB4C9109475EF50</span></span></p>
+</blockquote>
+<blockquote>
+<p>PTA上有一道类似的<a title="https://pintia.cn/problems/1423478879342944256/" href="https://pintia.cn/problems/1423478879342944256/">python题目</a>，把单链表拆分为奇数表和偶数表。改为C++代码： <span class="highlight jop-noMdConv"><span class="gi jop-noMdConv">D:\wk\tching\ds4824\实验课24\pta.cn\A1-奇偶单链表\answer.cpp</span></span></p>
+</blockquote>
+<ul>
+<li><a title="https://pintia.cn/problems/937860160778067968/" href="https://pintia.cn/problems/937860160778067968/">删除单链表中最后一个与给定值相等的结点</a></li>
+</ul>
+<blockquote>
+<p>已完成“矩阵运算”题目且得分20分及以上的同学可以加试一道附加题。请微信群内以“学号 姓名”的格式接龙。</p>
+</blockquote>
+<ul>
+<li>
+<p><a title="https://pintia.cn/problems/1282494976847581184/" href="https://pintia.cn/problems/1282494976847581184/">分糖果（循环线性表）</a> - 编程题</p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/1057878237248782336/" href="https://pintia.cn/problems/1057878237248782336/">链表倒数n个结点的乘积</a> - 编程题</p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/6301/" href="https://pintia.cn/problems/6301/">重排静态链表</a> - 编程题</p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/966888070992879616/" href="https://pintia.cn/problems/966888070992879616/">出栈序列的合法性</a></p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/604/" href="https://pintia.cn/problems/604/">汉诺塔的非递归实现</a></p>
+</li>
+</ul>
+<blockquote>
+<p><a title="https://blog.csdn.net/qazwsxxxxxasd/article/details/107432754" href="https://blog.csdn.net/qazwsxxxxxasd/article/details/107432754">思路</a>：经典汉诺塔问题，非递归通过使用栈的方式模拟圆盘，通过出栈的方式来移动圆盘，而递归方式则是先移动n-1个到临时盘，再将最后一个移动到最终盘，再将n-1个移动至最终盘</p>
+</blockquote>
+<ul>
+<li>
+<p><a title="https://pintia.cn/problems/1321272940495585280/" href="https://pintia.cn/problems/1321272940495585280/">顺序二叉树（数组）转链接二叉树</a></p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/1064054502869065728/" href="https://pintia.cn/problems/1064054502869065728/">括号表示法创建二叉树</a></p>
+</li>
+</ul>
+<blockquote>
+<p>答案代码： <span class="highlight jop-noMdConv"><span class="gi jop-noMdConv">D:\wk\tching\ds4824\实验课24\pta.cn\A2-括号表示法创建二叉树\answer.cpp</span></span></p>
+</blockquote>
+<ul>
+<li><a title="https://pintia.cn/problems/1364814413893566464/" href="https://pintia.cn/problems/1364814413893566464/">先序序列+中序序列建立二叉树（递归法）</a></li>
+</ul>
+<blockquote>
+<p>答案代码： <span class="highlight jop-noMdConv"><span class="gi jop-noMdConv">D:\wk\tching\ds4824\实验课24\pta.cn\A3-先中创建二叉树\answer.cpp</span></span></p>
+</blockquote>
+<ul>
+<li>
+<p><a title="https://pintia.cn/problems/1364812817067507712/" href="https://pintia.cn/problems/1364812817067507712/">后序+中序序列构造二叉树（递归法）</a></p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/1011614788076732416/" href="https://pintia.cn/problems/1011614788076732416/">AVL Tree Insertion</a></p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/908/" href="https://pintia.cn/problems/908/">二叉搜索树的操作集</a></p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/977/" href="https://pintia.cn/problems/977/">Shortest Path [4]</a></p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/1198944886373912576/" href="https://pintia.cn/problems/1198944886373912576/">最短路径（迪杰斯特拉算法）</a></p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/1198956915826528256/" href="https://pintia.cn/problems/1198956915826528256/">拓扑排序</a></p>
+</li>
+</ul>
+<h2 id="收藏习题">收藏习题</h2>
+<ul>
+<li>
+<p><a title="https://pintia.cn/problems/1268010425636970496/" href="https://pintia.cn/problems/1268010425636970496/">整数数组高效去重I</a></p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/1364830941112270848/" href="https://pintia.cn/problems/1364830941112270848/">棋盘覆盖问题（分治法）</a></p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/1330850188842815488/" href="https://pintia.cn/problems/1330850188842815488/">矩阵就地旋转</a></p>
+</li>
+<li>
+<p><a title="https://pintia.cn/problems/1231458003844222976/" href="https://pintia.cn/problems/1231458003844222976/">分形的递归输出</a></p>
+</li>
+</ul>
+<blockquote>
+<p>答案代码： <span class="highlight jop-noMdConv"><span class="gi jop-noMdConv">D:\wk\tching\ds4824\pta.cn\ds3-栈与队列\6-2 分形的递归输出\answer.cpp</span></span></p>
+</blockquote>
+</div>
+      </article>
+    </div>
+  </body>
+</html>
