@@ -1,0 +1,1300 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>body {
+  max-width: 980px;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable,
+.markdown-body .highlighttable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr,
+.markdown-body .highlighttable {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite,
+.markdown-body .highlighttable pre,
+.markdown-body .highlighttable div.highlight {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td,
+.markdown-body .highlighttable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headerlink {
+  font: normal 400 16px fontawesome-mini;
+  vertical-align: middle;
+  margin-left: -16px;
+  float: left;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0;
+  color: #333;
+}
+
+.markdown-body .headerlink:focus {
+  outline: none;
+}
+
+.markdown-body h1 .headerlink {
+  margin-top: 0.8rem;
+}
+
+.markdown-body h2 .headerlink,
+.markdown-body h3 .headerlink {
+  margin-top: 0.6rem;
+}
+
+.markdown-body h4 .headerlink {
+  margin-top: 0.2rem;
+}
+
+.markdown-body h5 .headerlink,
+.markdown-body h6 .headerlink {
+  margin-top: 0;
+}
+
+.markdown-body .headerlink:hover,
+.markdown-body h1:hover .headerlink,
+.markdown-body h2:hover .headerlink,
+.markdown-body h3:hover .headerlink,
+.markdown-body h4:hover .headerlink,
+.markdown-body h5:hover .headerlink,
+.markdown-body h6:hover .headerlink {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite,
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* MultiMarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px fontawesome-mini;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\e157';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+.markdown-body diagram-div, .markdown-body div.uml-sequence-diagram, .markdown-body, div.uml-flowchart {
+  overflow: auto;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><style>/*GitHub*/
+.highlight {background-color:#fff;color:#333333;}
+.highlight .hll {background-color:#ffffcc;}
+.highlight .c{color:#999988;font-style:italic}
+.highlight .err{color:#a61717;background-color:#e3d2d2}
+.highlight .k{font-weight:bold}
+.highlight .o{font-weight:bold}
+.highlight .cm{color:#999988;font-style:italic}
+.highlight .cp{color:#999999;font-weight:bold}
+.highlight .c1{color:#999988;font-style:italic}
+.highlight .cs{color:#999999;font-weight:bold;font-style:italic}
+.highlight .gd{color:#000000;background-color:#ffdddd}
+.highlight .ge{font-style:italic}
+.highlight .gr{color:#aa0000}
+.highlight .gh{color:#999999}
+.highlight .gi{color:#000000;background-color:#ddffdd}
+.highlight .go{color:#888888}
+.highlight .gp{color:#555555}
+.highlight .gs{font-weight:bold}
+.highlight .gu{color:#800080;font-weight:bold}
+.highlight .gt{color:#aa0000}
+.highlight .kc{font-weight:bold}
+.highlight .kd{font-weight:bold}
+.highlight .kn{font-weight:bold}
+.highlight .kp{font-weight:bold}
+.highlight .kr{font-weight:bold}
+.highlight .kt{color:#445588;font-weight:bold}
+.highlight .m{color:#009999}
+.highlight .s{color:#dd1144}
+.highlight .n{color:#333333}
+.highlight .na{color:teal}
+.highlight .nb{color:#0086b3}
+.highlight .nc{color:#445588;font-weight:bold}
+.highlight .no{color:teal}
+.highlight .ni{color:purple}
+.highlight .ne{color:#990000;font-weight:bold}
+.highlight .nf{color:#990000;font-weight:bold}
+.highlight .nn{color:#555555}
+.highlight .nt{color:navy}
+.highlight .nv{color:teal}
+.highlight .ow{font-weight:bold}
+.highlight .w{color:#bbbbbb}
+.highlight .mf{color:#009999}
+.highlight .mh{color:#009999}
+.highlight .mi{color:#009999}
+.highlight .mo{color:#009999}
+.highlight .sb{color:#dd1144}
+.highlight .sc{color:#dd1144}
+.highlight .sd{color:#dd1144}
+.highlight .s2{color:#dd1144}
+.highlight .se{color:#dd1144}
+.highlight .sh{color:#dd1144}
+.highlight .si{color:#dd1144}
+.highlight .sx{color:#dd1144}
+.highlight .sr{color:#009926}
+.highlight .s1{color:#dd1144}
+.highlight .ss{color:#990073}
+.highlight .bp{color:#999999}
+.highlight .vc{color:teal}
+.highlight .vg{color:teal}
+.highlight .vi{color:teal}
+.highlight .il{color:#009999}
+.highlight .gc{color:#999;background-color:#EAF2F5}
+</style><title>chc</title></head><body><article class="markdown-body"><p><link type="image/x-icon" rel="shortcut icon" href="/_assets/edu.ico" />
+<link href="/_assets/font-awesome.css" rel="stylesheet"/>
+<link href="/_assets/prismjs.css" rel="stylesheet" />
+<link href="/_assets/markdown.css" rel="stylesheet" />
+<script type="text/javascript" src="/_assets/prism.js"></script>
+<!-- NOTE: There are several steps that are taken to release the html document -->
+<!-- Step 1: remove the title, head, article tags generated by MarkdownPreview -->
+<!-- Step 2: uncomment the following lines for enabling MathJax script -->
+<!-- <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    TeX: { equationNumbers: { autoNumber: "AMS" } },
+    tex2jax: {inlineMath: [["$","$"]]}
+  });
+</script>
+<script type="text/javascript" async src="/MathJax/MathJax.js?config=TeX-MML-AM_CHTML"></script> --></p>
+<!-- Step 3: uncomment the following lines for enabling toggle-toc script -->
+
+<!-- <script type="text/javascript" src="/js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".toc-toggle").click(function(){
+    $('body').toggleClass('with-toc');
+  });
+});
+</script> -->
+
+<p><title>Crowdsourcing and Human Computation</title>
+<!-- Step 1.1: uncomment the next line when revising the head tag in Step 1 -->
+<!-- <body class="with-toc"><article class="markdown-body"> --></p>
+<h1 id="early-drafts-on-crowdsourcing-and-human-computation-2019-2021">Early drafts on Crowdsourcing and Human Computation (2019-2021)<a id="home"></a><a class="headerlink" href="#early-drafts-on-crowdsourcing-and-human-computation-2019-2021" title="Permanent link"></a></h1>
+<p>
+2019-10-12 (周六) 10:28&nbsp;
+出处：<b>tsmc 原创</b>&nbsp;
+作者：<b>陈荣</b>&nbsp;
+</p>
+
+<!-- Navigation section -->
+
+<!-- http://web.archive.org/web/20130929055652/http://fontawesome.io/ v3.2.1-->
+
+<!-- tp://localhost/faicons.html -->
+
+<!-- <I class="icon-compass"></I> icon-compass -->
+
+<ul id="breadcrumb">
+<li><a href="#home"><span class="icon icon-home"> </span> &nbsp;</a></li>
+<li><a href="#sig"><span class="icon icon-twitter"> </span> SIG</a></li>
+<li><a href="#zzf"><span class="icon icon-comment-alt"> </span> IET ITS</a></li>
+<li><a href="#fn:1"><span class="icon icon-bookmark-empty"> </span> Private Ref.</a></li>
+<li><a href="/pap/allreferences.html#chc"><span class="icon icon-bookmark-empty"> </span> Topic Ref.</a></li>
+<li><a href="#his"><span class="icon icon-rss"> </span> Work History</a></li>
+</ul>
+
+<p><br></p>
+<p>此文档真实记录了形成众包方面文章初稿的过程。这个过程是辛苦的，需要参考新近阅读的文章，<a href="/pap/manyalittle.html">精彩的评论</a>，经常<a href="/rdings/allreferences.html#chc">引用的文章</a>等，同时也有一时兴起的点子和想法。<a href="#url">这里</a>是我整理的网上资源。</p>
+<h2 id="turn-something-into-gold">Turn Something Into Gold <a id="sig"></a><a class="headerlink" href="#turn-something-into-gold" title="Permanent link"></a></h2>
+<ol>
+<li>
+<p><em>Browser fingerprinting</em> to tackle the issue of crowd workers participating in tasks multiple times using different worker-ids to maximize their earnings. Workers attempting to complete the same task repeatedly may not be harmful in cases where the aim of a requester is to gather data or annotations, wherein more contributions from a single worker are fruitful. However, in several cases where the outcomes are subjective, requesters prefer the participation of distinct crowd workers. Refer to <a href="/rdings/chc/ta/kawase17ImprovingReliability-by DetectingCrowd Workers with Multiple Identities-icwe">Improving Reliability of Crowdsourced Results by Detecting Crowd Workers with Multiple Identities</a></p>
+</li>
+<li>
+<p><a href="https://www.linkedin.com/pulse/when-gis-just-enough-part-1-pano-voudouris">When GIS is just not enough - Part 1</a> - Inspired by Russell Page’s excellent post on LinkedIn entitled <a href="https://www.linkedin.com/pulse/comprehensive-linear-road-network-management-assetwise-russell-page">“Comprehensive Linear Road Network Management With AssetWise ALIM”</a>, I thought I would do a follow-up, focusing more on ALIM’s Linear Referencing Model and our “Logical first” vs a “GIS first” approach. Road networks are first and foremost modeled in a logical manner. As an oversimplified example, a road segment has an ID, a start node, an end node and a length. If the end node of this segment is the start node of another segment, then, hey, you got yourself a connected network! This is a simple, logical connection that can be modeled with a couple of tables. And it doesn’t matter how many bends or turns the geometry that connects the two nodes has, it doesn’t matter on which projection it is on, and it also doesn’t matter what the length the geometry thinks that it has. Bentley’s Assetwise ALIM considers geometries as just another attribute of the network (be it a road segment or a route). This allows our users to easily deal with complex network configurations such as self-intersecting routes, roundabouts, slip lanes, or dual carriageways.</p>
+</li>
+</ol>
+<h4 id="cross-studies">Cross Studies<a class="headerlink" href="#cross-studies" title="Permanent link"></a></h4>
+<ul>
+<li><a href="/rdings/se/angarita16modelingDynamicRecoveryStrategy-WWW.pdf">Modeling dynamic recovery strategy for composite web services execution</a></li>
+<li><a href="/rdings/se/zeng04webServiceComposition.pdf">QoS-Aware Middleware for Web Services Composition</a></li>
+<li><a href="https://dl.acm.org/citation.cfm?id=2900735">Online task assignment in crowdsourcing markets</a></li>
+<li><a href="http://blog.sina.com.cn/s/blog_6cfd62890100zr3v.html">A Concise Introduction to Multi-armed Bandit Processes</a></li>
+<li><a href="https://10clouds.com/blog/amazon-mechanical-turk-examples/">What is a Crowdsourcing Workflow?</a></li>
+<li><a href="http://www.gamestudies.org/1101/articles/williams_nesbitt_eidels_elliott">Balancing Risk and Reward to Develop an Optimal Hot-Hand Game</a></li>
+<li><a href="/rdings/chc/wkflow/1997RATE OF TEMPORAL DISCOUNTING DECREASES WITH AMOUNT OF REWARD.pdf">Rate of temporal discounting decreases with amount of reward (1997)</a></li>
+<li><a href="/rdings/chc/wkflow/2001DELAYED REWARD AND COST DISCOUNTING.pdf">DELAYED REWARD AND COST DISCOUNTING</a></li>
+<li><a href="/rdings/chc/rl/Gaussian Copula Regression_jss.v77i08.pdf">Gaussian Copula Regression in R</a></li>
+</ul>
+<h2 id="dt-paf-a-delaunary-triangulation-based-approach-to-dynamic-pricing-for-profit-driven-crowdsourced-package-delivery">DT-PAF: A Delaunary Triangulation Based Approach to Dynamic Pricing for Proﬁt-driven Crowdsourced Package Delivery<a id="zzf4"></a><a class="headerlink" href="#dt-paf-a-delaunary-triangulation-based-approach-to-dynamic-pricing-for-profit-driven-crowdsourced-package-delivery" title="Permanent link"></a></h2>
+<p>It can be seen as a new way of organizing the drivers to participate in carpooling or ride-sharing, like doing spatial crowdsourcing tasks [28]. There are several spatial crowdsourcing platforms (such as DiDi, UBER, Gigwalk and BRUBHUB to name but a few) that provide drivers with monetary incentives in exchange for their efforts. A surge of research into CPD services have been developed to properly allocate tasks with the aim to either minimizing delivery cost (e.g., distance, time [1,2] and the number of selected vehicles [3]) or maximizing the number of transhipments [4-7]. Typically, the platform specifies the price per unit distance (or time) for the tasks and allots tasks if only their requesters accept the unit prices [9-11].</p>
+<p>[28] Marshall Bern and David Eppstein. Mesh generation and optimal triangulation. Computing in Euclidean Geometry (Ding-Zhu Du and Frank Hwang, editors), Lecture Notes Series on Computing, volume 1, pages 23-90. World Scifentific, Singapore, 1992.</p>
+<p>These methods have made progress to some extent, however, they still suffer from some limitations. The CPD is similar, but quite different from traditional delivery that relies on specialized contractors on markets; requesters in crowdsourcing markets typically outsource large quantities of simple tasks to uncommitted or even surrogate drivers. Actually there exists a great uncertainty on the CPD markets, but most methods optimistically assume that drivers will certainly accept the packages allocated by algorithms, rarely considering whether they are committed or not, whether they are satisfied with the fixed payment for their delivery efforts. </p>
+<p>Designing effective pricing and allocation schemes presents a challenging problem due to requesters’ constraints and the realities of the CPD markets. </p>
+<p>Motivated by this example, we formulate the CPD problem with Dynamic Pricing (CPD-DP) that aims to deal with dynamic pricing with the dynamics of the demand and supply on multiple local markets. To solve the CPD-DP problem, we ﬁrst propose a Delaunay Triangulation based (DT-based in short) pricing strategy to price each package with guarantees to set a personalized base price. Then we establish a reward model with the package’ s temporal and price constraints, and also an acceptance model based on the temporal discounting theory [14] to estimate drivers’ psychological reward.</p>
+<p>Abstract. 
+Crowdsourced package delivery (CPD) has gained great interest from the logistics industry and academe due to its signiﬁcant economic and environmental impact. A number of progresses have been reported, however, dynamic pricing, as a special and significant part of the uncertain CPD markets, is far less explored. To address the problem, we propose a novel Delaunay Triangulation based pricing strategy for dealing with the imbalanced demand and supply in local markets with the aim to maximizing the profit of the CPD platform. To cater to drivers’ wishes further, we apply the hyperbolic temporal discounting function to estimate their psychological reward in order to increase the possibility of package acceptance. We propose a three-stage framework consisting of the DTbased pricing, the two-phase matching pruning and the package assigning algorithm, to figure out the best-possible package-driver matching. With the dataset generated by Brinkhoﬀ road network generator in the city of Jinan, China, we have conducted a series of experiments to evaluate the proposed approach against several representative baseline approaches. Experimental results show that our approach significantly outperforms the other approaches in terms of effectiveness and efficiency.</p>
+<p>We propose to use the well-known Delaunay Triangulation (DT) - a partition of a geometric region, defined by a point set or a polytope, into simplices that meet only at shared faces [92] - to partition packages into a set of triangles, as shown in Fig. 1 by the dashed triangles connecting (package) points, which are best according to some criterion that measures the ratio of packages to drivers, shape, or number of triangles.</p>
+<p>[92] Marshall Bern and David Eppstein. Mesh generation and optimal triangulation. Computing in Euclidean Geometry (Ding-Zhu Du and Frank Hwang, editors), Lectures Notes Series on Computing, volume 1, pages 23-90. World Scientific, Singapore, 1992.</p>
+<p>Table 1 provides the $maxR_p$ to reward the driver for each package after the dynamic pricing determined by the results of DT. Note that there are three drivers in the neighbour of $p_4$, its price is thus down to 6.23 because the supply is larger than the demand. In contrast, $p_1$’ is increased to 7.19 with aim to encourage the non-local driver to move here in pursuit of more payment. So the adjustment of price leads to a more proper solution {&hellip;}, as denoted by the yellow short arrows in Fig.1. Thus the total revenue is increased from 25 to 32. </p>
+<p>. Finding ways to increase every possiblity that encourages drivers to finish their assignments is indispensable, which has significant impact on the total revenue of CPD markets.</p>
+<p>Given the input package points, a Delaunay Triangulation based (DT-based in short) pricing strategy is then applied to partition the plane into polygonal cells containing closer points and thus figure out a proper price for each package by counting the number of drivers in the neighbour. With the indivdual prices settled, two efficient matching pruning algorithms are adopted to generate the best-possible candidate drivers for each package while satisfying the price and temporal constraints.</p>
+<p>近圆性，划分的三角形趋近于正三角形； 构成三角形区的三个顶点距离较近； 顶点密集的区域，三角形划分区域也密集。
+For more information on Delaunay triangulations and Voronoi diagrams, see the surveys by Fortune [88] and Aurenhammer [3].</p>
+<p>[88] S. Fortune. Voronoi diagrams and Delaunay triangulations. In Computing in Euclidean Geometry , F.K. Hwang and D.Z. Du, eds., World Scientific, 1992.</p>
+<p>[3] F. Aurenhammer. Voronoi diagrams — a survey of a fundamental geometric data structure. ACM Computing Surveys 23 (1991) 345-405.</p>
+<p>bipartite graph is constructed based on the set of packages and that of drivers and the maximum weighted bipartite matching algorithm is utilized to find the optimal package-driver matching.</p>
+<p>To establish a sound incentive mechanism, we make the first effort to partition packages into a set of triangles by the well-known DT technique in order to find the tradeoff between the demand of packages and the supply of drivers. Also we use hyperbolic temporal discounting function to establish a package acceptance model that can estimate the psychological reward of the driver.</p>
+<p>The package demand and driver supply are geographically imbalanced in distribution. Traditional fixed unit-price methods assume that the packages located in the same grid has same unit price. This is usually unrealistic since the demand and supply varies from a local market to another one. To solve this issue, we adopt the DT technique to divide the Euclidian plane into triangulation meshes, which capture the peculiar demand of packages and the corresponding supply of drivers, leading to a reasonable customized pricing. To do so, we select packages’ origins as vertexes to triangulate the plane. The DT of a package point set is the planar dual of the famous Voronoi diagram, which is a partition of the plane into polygonal cells, one for each input point, so that the cell for input point $p$ consists of the region of the plane closer to $p$ than to any other input point. </p>
+<p>According to an introduction by Bern and Eppstein [28], if no four points lie on a common circle - as illustrated by the dashed circles in Fig.1, then each vertex of the Voronoi diagram has degree three, and the DT, which has a bounded face for each Voronoi vertex and vice versa, will indeed be a triangulation. In implementation, a triangular mesh generator rests on the efficiency of its triangulation algorithms and data structures. There are many DT algorithms, for more information on DTs and Voronoi diagrams, see the surveys by Aurenhammer [3].</p>
+<pre><code>[28] Marshall Bern and David Eppstein. Mesh generation and optimal triangulation. Computing in Euclidean Geometry (Ding-Zhu Du and Frank Hwang, editors), Lecture Notes Series on Computing, volume 1, pages 23-90. World Scifentific, Singapore, 1992.
+[3] F. Aurenhammer. Voronoi diagrams — a survey of a fundamental geometric data structure. ACM Computing Surveys 23 (1991) 345-405.
+</code></pre>
+<h2 id="a-domain-of-influence-based-pricing-strategy-for-task-assignment-in-crowdsourcing-package-delivery">A Domain-of-Influence Based Pricing Strategy for Task Assignment in Crowdsourcing Package Delivery<a id="zzf2"></a><a class="headerlink" href="#a-domain-of-influence-based-pricing-strategy-for-task-assignment-in-crowdsourcing-package-delivery" title="Permanent link"></a></h2>
+<p>Advancements in the size and popularity of the e-commerce industry means that the pressures and importance of the supply chain and logistics. Working intelligently is more crucial than ever to determine business success. Crowdsourced package delivery is emerging as the latest technology that allows drivers to provide on-the-way delivery by using the excess capacity of their vehicles. This upgrades the operations and logistics among companies such as Amazon, DHL, SF, BestBuy and Macy, to the state of fast-paced delivery services and reduced transportation costs.</p>
+<p>Crowdsourced delivery has become a new opportunity to decease the strain on transport efficiency with the fast growth of online shopping. This is a mixed mode of passenger flows and transportation flows. The new mode entails the use of excess capacity of vehicles on journeys that already take place to support package delivery operations to enable faster and cheaper deliveries. At the same time, the participants can obtain the financial rewards that offer incentives to make more participants join the delivery process.</p>
+<p>Advancement in the size and popularity of the 
+The rapid development of online shopping is changing the logistics industry today. As the online retailers look to speed up delivery times and press down their growing multibillion logistics bill, Amazon continues to expand its same-day delivery services (Lurye 2018) and even quietly inviting drivers to handle its standard packages, the new “on-demand” delivery service also became available among companies such as DHL, SF, BestBuy and Macy. As companies continuously seek to explore new ways to provide customers with faster service, crowdsourced package delivery is emerging as a successful and fast-growing area of the crowdsourcing landscape that provides a solution to reducing logistics cost and traffic congestion by leveraging the crowd of taxis.</p>
+<div class="pageBottom"><span class="bNum">1</span><span class="bTit">Introduction</span><a id="zzf2i"></a><span class="tBot"><a href="#zzf2" target="_self" > Top</a> </span></div>
+
+<p>The rapid development of online shopping is changing the logistics industry today. As the online retailers look to speed up delivery times and press down their growing multibillion logistics bill, Amazon continues to expand its same-day delivery services (Lurye 2018) and even quietly inviting drivers to handle its standard packages, the new “on-demand” delivery service also became available among companies such as DHL, SF, BestBuy and Macy. As companies continuously seek to explore new ways to provide customers with faster service, crowdsourced package delivery is emerging as a successful and fast-growing area of the crowdsourcing landscape that provides a solution to reducing logistics cost and traffic congestion by leveraging the crowd of taxis.</p>
+<h2 id="a-task-matching-algorithm-based-on-reward-model-for-spatial-crowdsourcing-failed">A Task Matching Algorithm Based on Reward Model for Spatial Crowdsourcing [FAILED] <a id="icwe"></a><a class="headerlink" href="#a-task-matching-algorithm-based-on-reward-model-for-spatial-crowdsourcing-failed" title="Permanent link"></a></h2>
+<h4 id="icwe2019"><a href="https://icwe2019.webengineering.org">ICWE2019: %</a><a class="headerlink" href="#icwe2019" title="Permanent link"></a></h4>
+<p>19th International Conference on Web Engineering
+Daejeon, South Korea | June 11-14, 2019</p>
+<p><i class="icon-cloud-upload"></i>&nbsp;<strong><a href="https://easychair.org/conferences/?conf=icwe2019">Submission</a></strong> Login with tsmc /crat509601</p>
+<p><i class="icon-folder-open"> D:\wk19\tsmc\pap\chc\19ICWE</i>&nbsp;&nbsp;&nbsp;
+<i class="icon-file-text"></i> <a href="/pap/chc/19ICWE/icwe19taskmatching.pdf">icwe19taskmatching.pdf</a></p>
+<p><strong>Full papers:</strong> mature, original research contribution. Reported results should be supported by some type of validation, and also include a justification about the choice/suitability of the validation method. In addition, evidence of use in practice and/or demonstration of scalability is regarded as a plus. (<markp>15 pages</markp>)</p>
+<h5 id="whr22-2018-04-0401doc">评注：计算机学报whr2.2-2018-04-04（终稿）01.doc<a class="headerlink" href="#whr22-2018-04-0401doc" title="Permanent link"></a></h5>
+<p>所谓“报酬模型”不过是一个按距离定价的策略，即执行任务走得越远得到的回报就越多。叫模型其实言过其实了，唉！应该怎么改呢？</p>
+<p><markg>USP:</markg>（1）跟踪类型的任务，如跟踪超限运输的车辆；或者（2）不做任务匹配，改做任务发布。</p>
+<div class="pageBottom"><span class="bNum">1</span><span class="bTit">Abstraction</span><a id="icwe1a"></a><span class="tBot"><a href="#icwe" target="_self" > Top</a> </span></div>
+
+<p>The maturity of wireless network and the popularity of mobile devices provide strong support for implementing spatial crowdsourcing, allowing people on the Internet to complete time-constrained and location-based real tasks in the physical world. Good examples are applications used in everyday life like Didi Chuxing and Baidu Waimai that apply the idea of crowdsourcing to serve people. Regarded as the core and tough problem on the research of spatial crowdsourcing, task assignment aims to allot spatial tasks to appropriate workers with enconomic space and time cost. In point this paper proposes a reward model and its task matching algorithm for spatial crowdsourcing. And we solved the problem by CPLEX and conducted several experiments on the Gowalla benchmark in the real world. The empirical results show that the proposed method performs better especially on task matching rate and feasibility, thus it is possible to provide optimized solution to spatial tasks.</p>
+<div class="pageBottom"><span class="bNum">2</span><span class="bTit">Introduction</span><a id="icwe2i"></a><span class="tBot"><a href="#icwe" target="_self" > Top</a> </span></div>
+
+<blockquote>
+    <span>Workers of the spatial crowdsourcing platform complained that the time spent on commuting between different locations to perform different tasks is non- negligible and is unpaid[1]. </span>
+</blockquote>
+
+<p>Therefore, in <a href="/rdings/chc/sc/DASFAA16-SpatialTasks.pdf">this paper</a>, we study the assignment of spatial tasks to workers with the objective of minimizing the <strong>“commuting cost”</strong> which can refer to time and transportation fee. &hellip; In addition to cost optimization, we are seeking solutions that are <strong>socially fair</strong>. Namely, we are looking for solutions that minimize the variance of the workload among workers. We want to assign a similar number of tasks with a similar total cost to each worker. No worker should, preferably, be overloaded or starved.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<blockquote>
+    <span>Motivated by weather crowdsourcing applications, we introduced the problem of Hyperlocal Spatial Crowdsourcing, where tasks can be performed by workers within their spatiotemporal vicinity. </span>
+</blockquote>
+
+<p>One major difference from existing SC paradigms [Kazemi and Shahabi 2012; He et al. 2014; To et al. 2015; Xiao et al. 2015; Guo et al. 2016] is that workers in our paradigm do not need to travel to the exact task locations, e.g., to the centers of the circular regions, and are eligible to perform tasks as long as they are in close spatiotemporal vicinity of the tasks, e.g., enclosed in the circular regions. We denote this new paradigm as <a href="/rdings/chc/sc/to17realtimeFramework4taskAssignment.pdf">Hyperlocal Spatial Crowdsourcing</a>. <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> The reason is two-fold. WHY? </p>
+<h2 id="mmaddescloser-a-multi-objective-optimization-on-city-wide-package-delivery-using-taxi-crowdsourcing">MMADdesCloser: A Multi-Objective Optimization On City-wide Package Delivery using Taxi Crowdsourcing <a id="zzf"></a><a class="headerlink" href="#mmaddescloser-a-multi-objective-optimization-on-city-wide-package-delivery-using-taxi-crowdsourcing" title="Permanent link"></a></h2>
+<h4 id="special-issue-ec"><a href="https://www.mdpi.com/journal/mathematics/special_issues/Mathematics_Evolutionary_Computation">Special Issue: EC</a><a class="headerlink" href="#special-issue-ec" title="Permanent link"></a></h4>
+<p><i class="icon-folder-open"> D:\wk18\tsmc\pap\chc\zzf</i>&nbsp;&nbsp;&nbsp;
+<i class="icon-download-alt"></i> <a href="/pap/chc/zzf/MMADesCloser_周志峰_1.06.docx">MMADesCloser_周志峰_1.06.docx</a></p>
+<div class="pageBottom"><span class="bNum">1</span><span class="bTit">Abstraction</span><a id="zzf1a"></a><span class="tBot"><a href="#zzf" target="_self" > Top</a> </span></div>
+
+<p>With the rapid development of online shopping, package delivery service has become increasingly important in modern logistics. Despite the great attempts at such services, online retailers have not had a profitable solution. In this paper, we use the crowd of taxis to make the delivery services more economical and environmentally friendly. Specially, we propose a MADesCloser algorithm to improve the baseline Destination-Closer(DesCloser) algorithm with no limitation on carrying capacity and using A* algorithm to estimate the distance to the destination of packages. Then, based on the improved algorithm, we propose an novel multi-objective routing algorithm, namely, MMADesCloser (Max-Waiting-Time and Max-Capacity DesCloser) to find the pareto solution set. And then applying a mathematical method of MOP, we obtain the optimum solution of the MMADesCloser algorithm whose Max-Waiting-Time equals 11 and Max-Capacity equals 6. Finally, we evaluate the performance of improved algorithms using the data sets, which consist of road network and the large-scale trajectory data respectively generated by Brinkhoff road network generator in the city of Luoyang, China. Results show that, our improved algorithm performs higher success rate, lower average number of particpating taxis, less average delivery distance and less average delivery time. Especially, MMADesCloser have best performance on the success rate of more than 88% , lowing the package backlog of interchange stations and reducing the total waiting time of all packages to 14916.6 time slices with failure in delivering.</p>
+<div class="pageBottom"><span class="bNum">2</span><span class="bTit">Introduction</span><a id="zzf2i"></a><span class="tBot"><a href="#zzf" target="_self" > Top</a> </span></div>
+
+<p>The rapid development of online shopping is changing the logistics industry today. As the online retailers look to speed up delivery times and press down their growing multibillion logistics bill, Amazon continues to expand its same-day delivery services (Lurye 2018) and even quietly inviting drivers to handle its standard packages, the new “on-demand” delivery service also became available among companies such as DHL, SF, BestBuy and Macy. As companies continuously seek to explore new ways to provide customers with faster service, crowdsourced package delivery is emerging as a successful and fast-growing area of the crowdsourcing landscape that provides a solution to reducing logistics cost and traffic congestion by leveraging the crowd of taxis.</p>
+<p>Rebecca Lurye. Amazon Expands Free Same-Day Delivery To Greater Hartford. Available from <a href="http://www.courant.com/business/hc-biz-hartford-amazon-same-day-delivery-20181023-story.html">http://www.courant.com/business/hc-biz-hartford-amazon-same-day-delivery-20181023-story.html</a>, accessed on Nov. 1, 2018.</p>
+<p>How Amazon Is Making Package Delivery Even Cheaper. Available from <a href="http://fortune.com/2016/02/18/amazon-flex-deliveries/">http://fortune.com/2016/02/18/amazon-flex-deliveries/</a>, accessed on Nov. 1, 2018.</p>
+<p>However, none of them to our knowledge have paid sufficient attention to the conflict between optimization objectives. Instead their means of solving such problems were primarily focused on how to filter out no good candidates as early as possible and how to scalarize conflicting objectives into a single objective (i.e. weighted sum) for linear optimization. Typically, a crowdsourced delivery model has objectives: the average success rate (fsr) and the average number of participating taxis (fnpt), which vary with the maximum waiting time (MaxWT) and the maximum capacity (MaxC). The experimental investigation on real data validate their non-linear competitive relationship when &hellip; as shown in Fig.1. This indicates how difficult to determine the proper weights to capture the trade-off of competitive objectives, which inevitably degrades the performance of the delivery path planning.</p>
+<p>In this paper, the real-world crowdsourced delivery problem is naturally posed as non-linear programming problems having multiple conflicting objectives and solved in a multi-objective optimization fashion as it is. </p>
+<p>Many real-world search and optimization problems are naturally posed as non-linear programming problems having multiple conflicting objectives. </p>
+<h2 id="improving-large-scale-real-time-ridesharing-with-heuristics-for-road-networks">Improving large scale real-time ridesharing with heuristics for road networks.  <a id="uic"></a><a class="headerlink" href="#improving-large-scale-real-time-ridesharing-with-heuristics-for-road-networks" title="Permanent link"></a></h2>
+<h4 id="uic2018"><a href="http://www.smart-world.org/2018/uic/">UIC2018: %</a><a class="headerlink" href="#uic2018" title="Permanent link"></a></h4>
+<p>IEEE International Conference on Ubiquitous Intelligence and Computing
+Oct. 8-12, Guangzhou, China</p>
+<p><i class="icon-cloud-upload"></i>&nbsp;<strong><a href="https://easychair.org/conferences/?conf=uic2018">Submission</a></strong> Login with tsmc /crat509601</p>
+<p><i class="icon-folder-open"> D:\wk18\tsmc\pap\chc\18UIC</i>&nbsp;&nbsp;&nbsp;
+<i class="icon-download-alt"></i> <a href="/pap/chc/18UIC/uic18improvingLargeScale.docx">uic18improvingLargeScale.docx</a></p>
+<p><strong>Length.</strong> A submission is limited to <markp>8 pages</markp> for a main conference paper, <markp>6 pages</markp> for a workshop or special session paper, <markp>4 pages</markp> for a Work-in-Progress paper, and <markp>2 pages</markp> for a poster or demo paper in the <a href="https://www.ieee.org/conferences_events/conferences/publishing/templates.html">IEEE Computer Society Proceedings Format</a> with Portable Document Format (.pdf). A submission can have at most <markp>2 additional pages</markp> with the pages overlength charge if accepted. </p>
+<div class="pageBottom"><span class="bNum">1</span><span class="bTit">Abstraction</span><a id="uic1a"></a><span class="tBot"><a href="#uic" target="_self" > Top</a> </span></div>
+
+<p>Despite the great potential, ridesharing, especially with dynamic queries, has not been thoughly investigated on large-scale road networks often with many turns and one-way roads. In this paper, we treat one-way roads and viaduct roads of urban road network as heuristic information, and improve the response time of a three-phased ridesharing framework by pre-pruning some drivers to avoid complex shortest path calculation. We evaluate the proposed method using the data sets, which consist of road network and the large-scale trajectory data respectively generated by Brinkhoff road network generator in the city of Jinan, China. Results show that, our algorithm achieves a very high pruning ratio with little response time &ndash; only about 300ms in the case of 5000 drivers. It can be concluded that the improved framework is more effective for solving practical application problems. </p>
+<div class="pageBottom"><span class="bNum">2</span><span class="bTit">Introduction</span><a id="uic2i"></a><span class="tBot"><a href="#uic" target="_self" > Top</a> </span></div>
+
+<p>Dynamic ridesharing is a successful and fast-growing area of the crowdsourcing landscape that provides a solution to reducing traffic congestion and parking pressure by sharing ones commute with other people. </p>
+<p>Although partially easing the complexity behind the creation of ridesharing, these techniques still assume an oversimplified model of road networks. Typically, the straight line distance (i.e. Euclidean distance) is utilized regardless of the road network that are being used. It does not consider on which projection it is on, and it also does not matter what the distance the real route thinks that it has. So they turn out to be dispointing for rider-matching on road networks with roundabouts, one-way roads, or dual carriageways, and thus cannot be considered as a proper ready-to-use solution in real applications. </p>
+<p>While Euclidean distance has been used as a heuristic to search for the closest POIs by their road network distance, its improvement on large-scale road networks has not been thoroughly investigated. </p>
+<p>We propose to optimize real-time ridesharing with heuristics for road networks such as one-way roads and travel directions. These heuristics are embedded in a three-phased framework for real-time rider-matching <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. The first phase is pre-pruning, and the second phase is skyline pruning, while the third phase is the computation of shortest paths. In the first phase, we judge whether the driver is on the one-way road, then prune the driver through the calculation of the Euclidean distance. In the second phase, we use skyline computations in terms of price and waiting time to avoid providing riders too many candidate drivers satisfying all riders&rsquo; constraints.</p>
+<p>We evaluate the proposed heuristics extensively using large-scale MNTG data sets. The experimental results show that, the size and accuracy of candidate drivers can be greatly improved after the prunning. Even with one-way road heuristic, our algorithm  significantly maintains high matching accracy. The proposed heuristics improve matching accuracy and efficiency of the three-phased framework.</p>
+<h2 id="computational-interaction">Computational Interaction<a class="headerlink" href="#computational-interaction" title="Permanent link"></a></h2>
+<p><a href="http://xiangshiren.com">Xiangshi Ren任向实</a> is a lifetime tenured professor in the School of Information and founding director of the <a href="http://xrenlab.com/">Center for Human-Engaged Computing</a> at Kochi University of Technology. He is founding president and honorary lifetime president of the <a href="http://icachi.org/">International Chinese Association of Computer Human Interaction(ICACHI)</a>. He has been named as one of the Asian Human-Computer Interaction Heroes in ACM CHI 2015. He was a visiting professor at the University of Toronto, visiting faculty researcher at IBM Research (Almaden), and visiting/guest/chair professor at several universities in China. Currently he is chair professor of Jilin University, adjunct professor of Beijing Normal University. He is a Senior Member of the ACM, and a Senior Member of the IEEE.</p>
+<p>Human-Engaged Computing (HEC) is a study of the synergized interaction between humans and computers, as well as phenomena around the interaction. It encompasses all aspects of interactions between humans and technologies. Studies in HEC start with an ever deeper understanding of humans, adapting the affordances of technologies to human needs and potentials. HEC drives the evolution of computing with focused emphasis on synergizing the best capacities of humans and computers with a view to enhancing human existence and making a better world for all.</p>
+<p><a href="http://users.comnet.aalto.fi/oulasvir/">Antti Oulasvirta</a> leads the <a href="https://interfacemetrics.aalto.fi">User Interfaces research group</a> at Aalto University. </p>
+<p>Computational interaction applies abstraction, automation, and analysis to inform our understanding of the structure of interaction and also to inform the design of the software that drives new and exciting human-computer interfaces. </p>
+<h2 id="work-history">Work History <a id="his"></a><a class="headerlink" href="#work-history" title="Permanent link"></a></h2>
+<ul>
+<li>2019-01-04 (周五) 19:40 ICWE2019文章【started】</li>
+<li>2018-02-18 (周日) 20:22 新建md文件</li>
+<li>2018-02-20 (周二) 20:18 njq文章修改【done】</li>
+<li>2018-03-15 (周四) 07:42 TIST文章起草【failed】</li>
+<li>2019-04-24 (周三) 11:06 重新梳理CHC研究，整理相关文献和资源，rdings和pap目录都有调整</li>
+</ul>
+<p>An ‘Deep’ and ‘Deep RL’ Framework for Task Arrangement in Spatial Crowdsourcing
+Crowdsourcing provides a convenient platform to collaboratively perform complex tasks. However, it is still an challenge for crowdsourcing schemes to assign complex tasks to the most suitable workers, for the difficulty to measure the skills quantitatively of every worker in large-scale tasks or situations need assigning tasks to workers who are the most suitable but unavailable temporarily. To this end, we investigate how to realize optimal complex task using Deep Reinforcement Learning (DRL). Firstly, a deep recurrent neural network prediction model of workers-task matching degree is established to measure the skills quantitatively of a new worker, which is trained by historical task records of existing workers. Next, an DQN based RL framework is proposed to optimize the task allocation problem. In this framework, crowdsourcing problem is modeled as a sequential decision problem, where a DQN agent chooses whether to match the waiting task sequence and free workers at each time. The agent takes the waiting task sequence and skills quantities of free workers predictied by the  prediction model metioned above as state inputs. Considering that the sequence length is dynamic, we add a LSTM layer to networks of DQN to realize the unfixed length of information input with fixed length of network input interface. Comprehensive experimental results demonstrate that our work significantly outperform related proposals.</p>
+<p>==&gt;</p>
+<p>Despite that Spatial Crowdsourcing (SC) is a promising paradigm for solving task cheaply via crowds of mobile users, task arrangement remains a signicant challenge due to highly unstable participants in terms of arrival and skill and commitment. To address this issue, this paper investigates how to realize uncertain descion making using Deep Reinforcement Learning (DRL). Firstly, a deep recurrent neural network prediction model of workers-task matching degree is established to measure the skills quantitatively of a new worker, which is trained by historical task records of existing workers. Next, an DQN based RL framework is proposed to optimize the task allocation problem. Unlike previous deterministic optimization and supervised learning techniques, SC is modeled as a sequential decision problem in our framework, where a DQN agent chooses whether to match the waiting task sequence and free workers at each time. The agent takes the waiting task sequence and skills quantities of free workers predictied by the  prediction model metioned above as state inputs. Considering that the sequence length is dynamic, we add a LSTM layer to networks of DQN to realize the unfixed length of information input with fixed length of network input interface. Comprehensive experimental results demonstrate that our work significantly outperform the state-of-the-art on several problems and benchmark datasets.</p>
+<h2 id="resources-and-people">Resources and People <a id="url"></a><a class="headerlink" href="#resources-and-people" title="Permanent link"></a></h2>
+<p><a href="/rdings/chc/lionbook_3v0.pdf">The LION Way Machine Learning plus Intelligent Optimization</a> is a textbook written by Roberto Battiti and Mauro Brunato of <a href="http://www.intelligent-optimization.org/">LIONlab (machine Learning and Intelligent OptimizationN LABoratory)</a> at DISI - Università of Trento. <a href="http://lionoso.org/">LIONoso 2.1</a>, developed by LIONlab, is a comprehensive Machine Learning and Intelligent Optimization tool for non-profit research and academic use. The <a href="https://intelligent-optimization.org/LIONbook/lioncommunity.html">LIONcommunity page</a> contains mixed materials about machine learning and optimization made available by our lab and by a growing community of active researchers and users, in particular slides related to the LIONbook, usage cases in selected application areas, tutorial movies, etc.</p>
+<p><a href="http://www.mysmu.edu/faculty/hclau/pub.html">Hoong Chuin Lau&rsquo;s Publications</a> make use of optimization models, agent-based models, and metaheuristics to solve use-inspired data-driven resource planning, scheduling and coordination problems in logistics, transportation, and supply chain management.</p>
+<p><a href="http://realtimelogistics.info/iccl/?page_id=854">ICCL’15 in Sketch Notes</a> 6th International Conference on Computational Logistics (ICCL’15) September 23-25, 2015 in Delft, The Netherlands</p>
+<p>[1] spatial crowdsourcing benchmark algorithms. <a class="magiclink magiclink-github magiclink-repository" href="https://github.com/gmission/SpacialCrowdsourcing" title="GitHub Repository: gmission/SpacialCrowdsourcing">gmission/SpacialCrowdsourcing</a>, 2018.</p>
+<p>[2] spatial crowdsourcing dataset generator. <a class="magiclink magiclink-github magiclink-repository" href="https://github.com/gmission/SCDataGenerator" title="GitHub Repository: gmission/SCDataGenerator">gmission/SCDataGenerator</a>, 2018.</p>
+<p>[3] DiDi Chuxing. <a href="https://www.didichuxing.com">https://www.didichuxing.com</a>, 2018.</p>
+<p>[4] Field Agent. <a href="https://www.fieldagent.net,2018">https://www.fieldagent.net,2018</a>.</p>
+<p>[5] gMission. <a href="http://gmission.github.io,2018">http://gmission.github.io,2018</a>.</p>
+<p>[6] GoogleMap Street View. <a href="https://www.google.com/maps/views/streetview">https://www.google.com/maps/views/streetview</a>, 2018.</p>
+<p>[7] TaskRabbit. <a href="http://crowdflower.com/">http://crowdflower.com/</a>, 2018.</p>
+<p>[8] uber. <a href="https://www.uber.com">https://www.uber.com</a>, 2018.</p>
+<p>[9] 时空众包计算：面向共享经济的一种新型计算范式. <a href="http://iri.buaa.edu.cn/info/1016/1291.htm">http://iri.buaa.edu.cn/info/1016/1291.htm</a></p>
+<p><a href="/rdings/chc/sc/spatial crowdsourcing.txt">这个文件</a>里有更早的有关时空众包的资源。</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>[Cao et. al., 2015] Bin Cao, L. Alarabi, M.F. Mokbel, and A. Basalamah. SHAREK: A Scalable Dynamic Ride Sharing System. In Proceedings of the IEEE International Conference on Mobile Data Management, papges 4-13, 2015. <a href="/rdings/chc/ridesharing/cao15SHAREK-A Scalable Dynamic Ride Sharing System.pdf">(cached)</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>[To et. al., 2017] Luan Tran, Hien To, Liyue Fan, Cyrus Shahabi. A Real-Time Framework for Task Assignment in Hyperlocal Spatial Crowdsourcing. ACM Transactions on Intelligent Systems and Technology March 2017, 25 pages. <a href="/Users/rchen/D4win/wk/tsmc/pap/chc/%28/rdings/chc/sc/to17realtimeFramework4taskAssignment.pdf%29">(cached)</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>[Liu et. al., 2016] Qing Liu, Talel Abdessalem, Huayu Wu, Zihong Yuan, Stéphane Bressan. Cost Minimization and Social Fairness for Spatial Crowdsourcing Tasks. In Proceedings of the 21st International Conference on Database Systems for Advanced Applications, pages 3-17, Dallas, TX, USA, April 16-19, 2016, Lecture Notes in Computer Science 9642, Springer 2016, ISBN 978-3-319-32024-3 <a href="/rdings/chc/sc/DASFAA16-SpatialTasks.pdf">(cached)</a>&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>[Kazemi&amp;Shahabi, 2012] Leyla Kazemi and Cyrus Shahabi. GeoCrowd: enabling query answering with spatial crowdsourcing. In Proceedings of the 20th International Conference on Advances in Geographic Information Systems (SIGSPATIAL&lsquo;12). ACM, New York, NY, USA, 189-198. DOI: <a href="http://dx.doi.org/10.1145/2424321.2424346">http://dx.doi.org/10.1145/2424321.2424346</a> <a href="/rdings/chc/sc/kazemi12GeoCrowd-SIGSpatialGIS.pdf">(cached)</a>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>[Cheng et. al., 2018] Peng Cheng, Xun Jian, and Lei Chen. An experimental evaluation of task assignment in spatial crowdsourcing. Proc. VLDB Endow. 11, 11 (July 2018), 1428-1440. DOI: <a href="https://doi.org/10.14778/3236187.3236196">https://doi.org/10.14778/3236187.3236196</a> <a href="/rdings/chc/sc/cheng18ExperimentalEvaluation-VLDB.pdf">(cached)</a>&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>Yongxin Tong, Libin Wang, Zimu Zhou, Lei Chen, Bowen Du, and Jieping Ye. Dynamic Pricing in Spatial Crowdsourcing: A Matching-Based Approach. In Proceedings of the 2018 International Conference on Management of Data (SIGMOD &lsquo;18). ACM, New York, NY, USA, 773-788. DOI: <a href="https://doi.org/10.1145/3183713.3196929">https://doi.org/10.1145/3183713.3196929</a> <a href="/rdings/chc/sc/tong18DynamicPricing-sigmod.pdf">(cached)</a>&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>[Guo et. al., 2018] Guo B, Liu Y, Wang L, Li VO, Jacqueline CK, Yu Z. Task Allocation in Spatial Crowdsourcing: Current State and Future Directions. IEEE Internet of Things Journal. 2018 Mar 15. DOI: <a href="https://doi.org/10.1109/JIOT.2018.2815982">https://doi.org/10.1109/JIOT.2018.2815982</a> <a href="/rdings/chc/sc/guo18TA_Current State and Future Directions.pdf">(cached)</a>&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>[Liu et. al., 2018] Liu Y, Guo B, Chen C, Du H, Yu Z, Zhang D, Ma H. FooDNet: Toward an Optimized Food Delivery Network based on Spatial Crowdsourcing. IEEE Transactions on Mobile Computing. 2018 Aug 1. DOI: <a href="https://doi.org/10.1109/TMC.2018.2861864">https://doi.org/10.1109/TMC.2018.2861864</a> <a href="/rdings/chc/sc/liu18FooDNet.pdf">(cached)</a>&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>[Dai et. al., 2013] Dai P, Lin CH, Mausam, and Weld DS. POMDP-based control of workflows for crowdsourcing. Artif. Intell. 202(1), 52-85 (2013). DOI: <a href="https://doi.org/10.1016/j.artint.2013.06.002">https://doi.org/10.1016/j.artint.2013.06.002</a> <a href="/rdings/chc/dai13POMDP-basedControl-AIJ.pdf">(cached)</a>&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></article></body></html>
