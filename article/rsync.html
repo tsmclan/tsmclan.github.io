@@ -118,9 +118,9 @@ $(document).ready(function(){
 zstd 解压后得到 .tar 格式的压缩包，在 Windows 下使用系统自带的解压缩工具再次解压</p>
 <h2 id="23-git">2.3 添加至 git<a class="headerlink" href="#23-git" title="Permanent link"></a></h2>
 <p>将刚刚解压的 rsync 的相关文件复制到 Git 安装目录的对应位置，如：</p>
-<div class="highlight"><pre>F:<span class="se">\E</span>D<span class="se">\r</span>sync-3.2.7-2-x86_64.pkg<span class="se">\u</span>sr<span class="se">\b</span>in --&gt; D:<span class="se">\G</span>it<span class="se">\u</span>sr<span class="se">\b</span>in  
-F:<span class="se">\E</span>D<span class="se">\r</span>sync-3.2.7-2-x86_64.pkg<span class="se">\u</span>sr<span class="se">\l</span>ib --&gt; D:<span class="se">\G</span>it<span class="se">\u</span>sr<span class="se">\l</span>ib  
-F:<span class="se">\E</span>D<span class="se">\r</span>sync-3.2.7-2-x86_64.pkg<span class="se">\u</span>sr<span class="se">\s</span>hare --&gt; D:<span class="se">\G</span>it<span class="se">\u</span>sr<span class="se">\s</span>hare
+<div class="highlight"><pre>F:\ED\rsync-3.2.7-2-x86_64.pkg\usr\bin --&gt; D:\Git\usr\bin  
+F:\ED\rsync-3.2.7-2-x86_64.pkg\usr\lib --&gt; D:\Git\usr\lib  
+F:\ED\rsync-3.2.7-2-x86_64.pkg\usr\share --&gt; D:\Git\usr\share
 </pre></div>
 
 <h2 id="24">2.4 测试<a class="headerlink" href="#24" title="Permanent link"></a></h2>
@@ -134,15 +134,15 @@ rsync -h
 <p>A. 打开 Git Bash ，运行 rsync -v ，如果报 msys-zstd-1.dll not found，则下载 libzstd 链接库，下载地址
 <a href="https://repo.msys2.org/msys/x86_64/libzstd-1.5.4-1-x86_64.pkg.tar.zst">https://repo.msys2.org/msys/x86_64/libzstd-1.5.4-1-x86_64.pkg.tar.zst</a>
 解压方法同上第二小点，解压后将 libzstd 相关文件复制到 Git 安装目录的对应位置，如：
-<div class="highlight"><pre>F:<span class="se">\E</span>D<span class="se">\l</span>ibzstd-1.5.4-1-x86_64.pkg<span class="se">\u</span>sr<span class="se">\b</span>in --&gt; D:<span class="se">\G</span>it<span class="se">\u</span>sr<span class="se">\b</span>in
+<div class="highlight"><pre>F:\ED\libzstd-1.5.4-1-x86_64.pkg\usr\bin --&gt; D:\Git\usr\bin
 </pre></div></p>
 <p>B. 重新运行，如果报 msys-xxhash-0.dll not found ，
 则下载 libxxhash 链接库，下载地址：
 <a href="https://repo.msys2.org/msys/x86_64/libxxhash-0.8.1-1-x86_64.pkg.tar.zst">https://repo.msys2.org/msys/x86_64/libxxhash-0.8.1-1-x86_64.pkg.tar.zst</a>
 解压方法同上第二小点，解压后将 libxxhash 相关文件复制到 Git 安装目录的对应位置，如
 ：
-<div class="highlight"><pre>F:<span class="se">\E</span>D<span class="se">\l</span>ibxxhash-0.8.1-1-x86_64.pkg<span class="se">\u</span>sr<span class="se">\b</span>in --&gt; D:<span class="se">\G</span>it<span class="se">\u</span>sr<span class="se">\b</span>in    
-F:<span class="se">\E</span>D<span class="se">\l</span>ibxxhash-0.8.1-1-x86_64.pkg<span class="se">\u</span>sr<span class="se">\s</span>hare --&gt; D:<span class="se">\G</span>it<span class="se">\u</span>sr<span class="se">\s</span>hare  
+<div class="highlight"><pre>F:\ED\libxxhash-0.8.1-1-x86_64.pkg\usr\bin --&gt; D:\Git\usr\bin    
+F:\ED\libxxhash-0.8.1-1-x86_64.pkg\usr\share --&gt; D:\Git\usr\share  
 </pre></div></p>
 <p>C. 重新运行，如果报 msys-lz4-1.dll not found ，
 则下载 liblz4 链接库，下载地址：
@@ -185,29 +185,29 @@ OPTION选项说明
 </pre></div>
 
 <h2 id="32-push">3.2 上传(push)<a class="headerlink" href="#32-push" title="Permanent link"></a></h2>
-<div class="highlight"><pre>rsync <span class="o">[</span>OPTION...<span class="o">]</span> SRC... <span class="o">[</span>USER@<span class="o">]</span>HOST:DEST    
+<div class="highlight"><pre>rsync [OPTION...] SRC... [USER@]HOST:DEST    
 
 Push 　　　　　　　　  ---推，上传  
 rsync 　　　　　　　　 ---备份命令  
-<span class="o">[</span>options<span class="o">]</span> 　　　　　　   ---选项  
-SRC...　　　　　　      ---本地源文件  
-<span class="o">[</span>USER@<span class="o">]</span> 　　　　　　---目标主机的系统用户  
+[options] 　　　　　　---选项  
+SRC...　　　　　　    ---本地源文件  
+[USER@] 　　　　　　  ---目标主机的系统用户  
 HOST　　　　　　      ---目主机IP地址或域名  
-<span class="o">[</span>DEST<span class="o">]</span> 　　　　　    　---目标对应位置  
- <span class="sb">```</span> 
-&lt;span <span class="nv">style</span><span class="o">=</span><span class="s2">&quot;color:red;&quot;</span>&gt;例如： rsync -avz ./C++.pdf tsmc@172.27.67.172:/home/tsmc/teamip/lh/&lt;/span&gt;
+[DEST] 　　　　　     ---目标对应位置  
+ ``` 
+&lt;span style=&quot;color:red;&quot;&gt;例如： rsync -avz ./C++.pdf tsmc@172.27.67.172:/home/tsmc/teamip/lh/&lt;/span&gt;
 
-<span class="c1"># 4. 通过脚本使用</span>
+# 4. 通过脚本使用
 
 此脚本是老师创建，用于将项目数据更简洁明了地同步到GPU服务器上。用法如下：
-<span class="sb">```</span>bash
-./mingw_sync_project_.sh <span class="o">[</span>push<span class="p">|</span>pull<span class="p">|</span>path<span class="o">]</span> user@IP project_dir
-<span class="c1"># project_dir指定包含数据集的目录。</span>
+```bash
+./mingw_sync_project_.sh [push|pull|path] user@IP project_dir
+# project_dir指定包含数据集的目录。
 </pre></div>
 
 <p>下面以一个实际例子详细展现在 git_bash 上使用此脚本。如下图所示，在 2080TI (IPv6 地址为 2001:da8:a801:69b2:b238:434c:99d7:ac3f ) 的用户目录 tsmc 下有一个文件夹 test_rsync ，该目录下有两个文件夹 A 和 B ，以及一个文件 file 。我们要实现将文件夹 A 和文件 file 同步到自己电脑上，同时不同步 B。</p>
 <p style="text-align: center;">
-        <img href="/_resources/目录结构.png" alt="">
+        <img alt="目录结构" src="/_resources/目录结构.png" alt="">
 </p>
 
 <h2 id="41">4.1 创建本地同步目录<a class="headerlink" href="#41" title="Permanent link"></a></h2>
@@ -222,7 +222,7 @@ HOST　　　　　　      ---目主机IP地址或域名
 </pre></div>
 
 <p style="text-align: center;">
-        <img href="/_resources/当前路径.png" alt="">
+        <img alt="当前路径" src="/_resources/当前路径.png" alt="">
 </p>
 
 <h2 id="43-syncexclude">4.3 新建文件 sync.exclude<a class="headerlink" href="#43-syncexclude" title="Permanent link"></a></h2>
@@ -238,7 +238,7 @@ HOST　　　　　　      ---目主机IP地址或域名
 <p>A．  试运行：在命令行键入“y”后，窗口会出现我们想要同步的文件</p>
 <p>B．  Pull：如果我们确认需要同步的文件无误后在此键入“y”即可完成本地对服务器的拉取操作</p>
 <p style="text-align: center;">
-        <img href="/_resources/运行.png" >
+        <img alt="两步运行过程" src="/_resources/运行.png" >
 </p>
 
 <p>同理，我们如果想上传文件到服务器，只需将上述命令中的pull改为push，命令如下：</p>
