@@ -1,0 +1,7 @@
+.idea/
+.virtual_documents/
+Thumbs.db
+*.swp
+*.pyc
+.DS_Store
+
