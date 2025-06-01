@@ -1,0 +1,69 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Body {
+_r: Vector
+_v: Vector
+_mass: float
+_radius: float
+__init__(, r, v, mass, radius)
+__str__()
+move(, f, dt)
+forceFrom(, other)
+}
+
+class Vector {
+_coords: a[:]
+_n: int
+__init__(, a)
+__getitem__(, i)
+__add__(, other)
+__sub__(, other)
+__abs__()
+scale(, alpha)
+dot(, other)
+direction()
+str()
+}
+
+enum Enum {}
+
+enum Planet {
+SUN
+MERCURY
+VENUS
+EARTH
+MARS
+JUPITER
+SATURN
+URANUS
+NEPTUNE
+MOON
+_mass: float
+_radius: float
+__init__(, mass, radius)
+surface_gravity()
+}
+
+class UniBase {
+n: int
+bodies: Body[:n]
+__init__(, n, i_th, r_v_mr_list)
+__str__()
+increase_time(, dt)
+}
+
+class Universe {
+PLANETS
+i_th: [:n]
+__init__(, n, i_th, r_v_list)
+__str__()
+str()
+}
+
+Vector <-- "_r\n_v" Body
+Planet <.. Universe
+UniBase <|- Universe
+Body <--* UniBase
+Enum <|- Planet
+@enduml
